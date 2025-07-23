@@ -1,3 +1,11 @@
+type Priority = "Urgente" | "Moyenne" | "Basse";
+
+type Todo = {
+  id: number;
+  title: string;
+  priority: Priority;
+};
+
 function App() {
   return (
     <div className="">
