@@ -1,4 +1,4 @@
-import { Divide } from "lucide-react";
+import { Construction, Divide } from "lucide-react";
 import { useEffect, useState } from "react";
 import TodoItem from "./TodoItem";
 
@@ -122,7 +122,15 @@ function App() {
               ))}
             </ul>
           ) : (
-            <div></div>
+            <div className="flex justify-center items-center flex-col p-5">
+              <div>
+                <Construction
+                  strokeWidth={1}
+                  className="w-40 h-40 text-primary"
+                />
+                <p className="text-sm">Aucune tache pour ce filtre</p>
+              </div>
+            </div>
           )}
         </div>
       </div>
